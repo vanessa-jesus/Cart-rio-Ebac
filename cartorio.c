@@ -96,7 +96,7 @@
 	  
 	int deletar()
 	{
-	 	printf("Você escolheu deletar nomes!\n");
+	 	printf("Você escolheu deletar nomes!\n\n");
 	    system("pause");//pausa na escolha opção desejada
 	}
 	
@@ -115,10 +115,11 @@
 	setlocale(LC_ALL,"portuguese");//Definindo a linguagem
 	
 	printf("### cartório da ebac###\n\n");//Inicio do menu
-	printf("Escolha a opção desejada do menu:\n");
-	printf("\t1-Registrar nomes\n");
-	printf("\t2-Consultar nomes\n");
-	printf("\t3-Deletar nomes\n");
+	printf("Escolha a opção desejada do menu:\n\n");
+	printf("\t1-Registrar nomes\n\n");
+	printf("\t2-Consultar nomes\n\n");
+	printf("\t3-Deletar nomes\n\n");
+	printf("\t4-Sair do sistema\n\n");
 	printf("Opção:");//Fim do menu
 	
 	scanf("%d",&opcao);//armazenando a escolha do usuario
@@ -139,8 +140,13 @@
 	deletar();
 	break;
 	
+	case 4:
+	printf("obrigado por utilizar o sistema\n");
+	return 0;
+	break;
+	
 	default:
-	printf("Essa opção não está disponível!\n");
+	printf("Essa opção não está disponível!\n\n");
 	system("pause");
 	break;
 	//fim da seleção
